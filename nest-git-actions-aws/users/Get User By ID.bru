@@ -1,0 +1,19 @@
+meta {
+  name: Get User By ID
+  type: http
+  seq: 2
+}
+
+get {
+  url: http://localhost:3000/users/d05fb86b-2d3d-4474-b3b2-cb939c451b5b
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "name": "Teste",
+    "email": "teste@teste.com",
+    "password": "123456"
+  }
+}
